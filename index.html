@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopVibe — Premium E-Commerce</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Shop<span>Vibe</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#products" class="nav-link">Shop</a></li>
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#deals" class="nav-link">Deals</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-box" id="searchBox">
+          <input type="text" placeholder="Search products..." id="searchInput">
+          <button class="search-btn" id="searchBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </button>
+        </div>
+        <button class="icon-btn wishlist-btn" id="wishlistBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn cart-btn" id="cartBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          New Collection 2026
+        </div>
+        <h1 class="hero-title">
+          Discover Your
+          <br>
+          <span class="hero-gradient">Perfect Style</span>
+        </h1>
+        <p class="hero-desc">Explore curated collections of premium products designed for modern living. Quality meets elegance in every detail.</p>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Shop Collection
+          </a>
+          <a href="#categories" class="btn btn-ghost btn-lg">
+            Explore Categories
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-avatars">
+            <div class="hero-avatar" style="background:linear-gradient(135deg,#667eea,#764ba2);">A</div>
+            <div class="hero-avatar" style="background:linear-gradient(135deg,#f093fb,#f5576c);">M</div>
+            <div class="hero-avatar" style="background:linear-gradient(135deg,#4facfe,#00f2fe);">S</div>
+            <div class="hero-avatar" style="background:linear-gradient(135deg,#43e97b,#38f9d7);">R</div>
+          </div>
+          <div class="hero-trust-text">
+            <div><span class="hero-trust-count">10,000+</span> happy customers</div>
+            <div class="hero-trust-stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-showcase">
+          <div class="hero-orbit-ring"></div>
+          <div class="hero-main-circle">
+            <div class="hero-main-pulse"></div>
+            <div class="hero-main-pulse hero-main-pulse-2"></div>
+            <svg class="hero-shoe-icon" width="180" height="180" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18l1-4h20l1 4"/><path d="M4 14V8a2 2 0 012-2h12a2 2 0 012 2v6"/><path d="M10 6V4a2 2 0 00-2-2H6a2 2 0 00-2 2v2"/><path d="M18 6V4a2 2 0 00-2-2h-2a2 2 0 00-2 2v2"/></svg>
+          </div>
+          <div class="hero-float hero-float-1">
+            <div class="hfloat-icon hfloat-green">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div class="hfloat-info">
+              <span class="hfloat-label">Trending</span>
+              <span class="hfloat-value">+127%</span>
+            </div>
+          </div>
+          <div class="hero-float hero-float-2">
+            <div class="hfloat-icon hfloat-amber">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="hfloat-info">
+              <span class="hfloat-label">Rating</span>
+              <span class="hfloat-value">4.9/5</span>
+            </div>
+          </div>
+          <div class="hero-float hero-float-3">
+            <div class="hfloat-icon hfloat-red">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="hfloat-info">
+              <span class="hfloat-label">Flash Sale</span>
+              <span class="hfloat-value">50% OFF</span>
+            </div>
+          </div>
+          <div class="hero-float hero-float-4">
+            <div class="hfloat-icon hfloat-blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div class="hfloat-info">
+              <span class="hfloat-label">Free</span>
+              <span class="hfloat-value">Shipping</span>
+            </div>
+          </div>
+          <div class="hero-orbit-dot hero-orbit-dot-1"></div>
+          <div class="hero-orbit-dot hero-orbit-dot-2"></div>
+          <div class="hero-orbit-dot hero-orbit-dot-3"></div>
+          <div class="hero-orbit-dot hero-orbit-dot-4"></div>
+          <div class="hero-orbit-dot hero-orbit-dot-5"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS MARQUEE -->
+  <div class="brands-marquee">
+    <div class="marquee-track">
+      <div class="brand-item">NIKE</div>
+      <div class="brand-item">ADIDAS</div>
+      <div class="brand-item">PUMA</div>
+      <div class="brand-item">REEBOK</div>
+      <div class="brand-item">NEW BALANCE</div>
+      <div class="brand-item">CONVERSE</div>
+      <div class="brand-item">VANS</div>
+      <div class="brand-item">UNDER ARMOUR</div>
+      <div class="brand-item">NIKE</div>
+      <div class="brand-item">ADIDAS</div>
+      <div class="brand-item">PUMA</div>
+      <div class="brand-item">REEBOK</div>
+      <div class="brand-item">NEW BALANCE</div>
+      <div class="brand-item">CONVERSE</div>
+      <div class="brand-item">VANS</div>
+      <div class="brand-item">UNDER ARMOUR</div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Browse</span>
+        <h2>Shop by Category</h2>
+        <p>Find exactly what you're looking for</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card" data-category="sneakers">
+          <div class="cat-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18l1-4h20l1 4"/><path d="M4 14V8a2 2 0 012-2h12a2 2 0 012 2v6"/><path d="M10 6V4a2 2 0 00-2-2H6a2 2 0 00-2 2v2"/><path d="M18 6V4a2 2 0 00-2-2h-2a2 2 0 00-2 2v2"/></svg>
+          </div>
+          <h3>Sneakers</h3>
+          <p>120+ Products</p>
+        </div>
+        <div class="category-card" data-category="watches">
+          <div class="cat-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><polyline points="12 9 12 12 13.5 13.5"/><path d="M16.51 17.35l-.35 3.83a2 2 0 01-2 1.82H9.83a2 2 0 01-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 019.83 1h4.35a2 2 0 012 1.82l.35 3.83"/></svg>
+          </div>
+          <h3>Watches</h3>
+          <p>85+ Products</p>
+        </div>
+        <div class="category-card" data-category="bags">
+          <div class="cat-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          </div>
+          <h3>Bags</h3>
+          <p>95+ Products</p>
+        </div>
+        <div class="category-card" data-category="electronics">
+          <div class="cat-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg>
+          </div>
+          <h3>Electronics</h3>
+          <p>200+ Products</p>
+        </div>
+        <div class="category-card" data-category="clothing">
+          <div class="cat-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/></svg>
+          </div>
+          <h3>Clothing</h3>
+          <p>300+ Products</p>
+        </div>
+        <div class="category-card" data-category="accessories">
+          <div class="cat-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </div>
+          <h3>Accessories</h3>
+          <p>150+ Products</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Collection</span>
+        <h2>Featured Products</h2>
+        <p>Handpicked selections just for you</p>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sneakers">Sneakers</button>
+        <button class="filter-btn" data-filter="watches">Watches</button>
+        <button class="filter-btn" data-filter="bags">Bags</button>
+        <button class="filter-btn" data-filter="electronics">Electronics</button>
+        <button class="filter-btn" data-filter="clothing">Clothing</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Products injected by JS -->
+      </div>
+      <div class="no-results" id="noResults" style="display:none;">
+        <div class="no-results-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M8 11h6"/></svg>
+        </div>
+        <h3>No products found</h3>
+        <p>Try a different search or filter</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEALS BANNER -->
+  <section class="deals-section" id="deals">
+    <div class="container">
+      <div class="deals-banner">
+        <div class="deals-content">
+          <span class="deals-tag">Limited Time Offer</span>
+          <h2>Up to <span class="highlight">50% OFF</span></h2>
+          <p>Hurry up! Sale ends in:</p>
+          <div class="countdown" id="countdown">
+            <div class="countdown-item"><span id="days">00</span><small>Days</small></div>
+            <div class="countdown-item"><span id="hours">00</span><small>Hours</small></div>
+            <div class="countdown-item"><span id="minutes">00</span><small>Mins</small></div>
+            <div class="countdown-item"><span id="seconds">00</span><small>Secs</small></div>
+          </div>
+          <a href="#products" class="btn btn-primary">Shop the Sale</a>
+        </div>
+        <div class="deals-visual">
+          <div class="deal-icon">
+            <svg width="140" height="140" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Free Shipping</h3>
+          <p>On orders over $50</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3>Secure Payment</h3>
+          <p>100% protected transactions</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+          </div>
+          <h3>Easy Returns</h3>
+          <p>30-day return policy</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Dedicated customer service</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="newsletter-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for exclusive deals, new arrivals, and insider-only discounts.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-tag">About Us</span>
+          <h2>We're More Than Just a Store</h2>
+          <p>ShopVibe is a curated marketplace for those who appreciate quality and design. Every product is handpicked to ensure it meets our high standards.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </span>
+              <div>
+                <h4>Premium Quality</h4>
+                <p>Only the finest materials and craftsmanship</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              </span>
+              <div>
+                <h4>Sustainability</h4>
+                <p>Eco-friendly practices and packaging</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </span>
+              <div>
+                <h4>Customer First</h4>
+                <p>Your satisfaction is our priority</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card-1">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <div class="about-card-2">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 010-5C7 4 7 8 7 8"/><path d="M18 9h1.5a2.5 2.5 0 000-5C17 4 17 8 17 8"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0012 0V2z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo">Shop<span>Vibe</span></a>
+          <p>Premium products for modern living. Quality meets elegance in everything we do.</p>
+          <div class="social-links">
+            <a href="https://x.com/huzaifa_bhaii" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://github.com/huzaifaabhai" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/huzaifaa.bhai/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://pin.it/76G3XsM1w" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.39-5.89s-.35-.71-.35-1.76c0-1.65.96-2.88 2.15-2.88 1.02 0 1.51.76 1.51 1.68 0 1.02-.65 2.55-.99 3.97-.28 1.19.6 2.16 1.77 2.16 2.13 0 3.76-2.24 3.76-5.48 0-2.87-2.06-4.87-5-4.87-3.41 0-5.41 2.56-5.41 5.2 0 1.03.4 2.13.89 2.73a.36.36 0 01.08.34l-.33 1.36c-.05.22-.18.27-.41.16-1.52-.71-2.47-2.94-2.47-4.73 0-3.85 2.8-7.38 8.06-7.38 4.23 0 7.52 3.01 7.52 7.03 0 4.19-2.64 7.57-6.31 7.57-1.23 0-2.39-.64-2.79-1.4l-.76 2.89c-.27 1.06-1.01 2.4-1.5 3.21A12 12 0 1012 0z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>support@shopvibe.com</li>
+            <li>+1 (555) 123-4567</li>
+            <li>123 Commerce St, NY</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ShopVibe. All rights reserved.</p>
+      </div>
+      <div class="footer-developer">
+        <p>Developed by <a href="https://huzaifabhai.site" target="_blank" rel="noopener noreferrer">Huzaifa Bhai</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="overlay" id="overlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button class="close-cart" id="closeCart">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart" id="emptyCart">
+        <div class="empty-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </div>
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- PRODUCT QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-body">
+        <div class="modal-image" id="modalImage"></div>
+        <div class="modal-info">
+          <span class="modal-category" id="modalCategory"></span>
+          <h2 id="modalTitle"></h2>
+          <div class="modal-rating" id="modalRating"></div>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-price" id="modalPrice"></div>
+          <div class="modal-sizes">
+            <label>Size:</label>
+            <div class="size-options" id="modalSizes"></div>
+          </div>
+          <div class="modal-actions">
+            <div class="quantity-control">
+              <button class="qty-btn" id="modalQtyMinus">−</button>
+              <span id="modalQty">1</span>
+              <button class="qty-btn" id="modalQtyPlus">+</button>
+            </div>
+            <button class="btn btn-primary" id="modalAddToCart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Add to Cart
+            </button>
+            <button class="icon-btn modal-wishlist" id="modalWishlist">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
